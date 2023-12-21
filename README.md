@@ -1,4 +1,4 @@
-# Cronômetro com HTML, CSS e JavaScript
+# Cronômetro 
 
 Este é um projeto simples de cronômetro desenvolvido usando HTML, CSS e JavaScript para aprimorar habilidades de desenvolvimento web e compreensão do setInterval.
 
