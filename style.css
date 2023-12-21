@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Lilita One', sans-serif;
+    
+  }
+  
+  body, html {
+    height: 100%; /* Define a altura da página como 100% */
+  }
+
+  body {
+    background-image: url('assets/fundorelogio.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex; /* Torna o body um flex container */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+  }
+
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Ajuste o espaçamento superior conforme necessário */
+    margin-bottom: 100px; /* Afastar a div .cronometro do .titulo */  
+
+}  
+ 
+  .titulo h1 {
+    margin-bottom: 50px; /* Espaçamento inferior */
+    font-size: 80px;
+    background: linear-gradient(45deg, #e5e91c, #272727); /* Altere as cores conforme desejado */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+  }
+  
+  .cronometro {
+    background-color: rgba(218, 241, 7, 0.5); 
+    padding: 50px;
+    border-radius: 10px;
+    width: 100%; /* largura desejada para a div */
+    height: 80%;
+    max-width: 600px; /* largura máxima opcional */
+    text-align: center; /* Alinha o conteúdo no centro */
+
+    display: flex; /* Torna a div .cronometro um flex container */
+    flex-direction: column; /* Ajusta a direção dos elementos para coluna */
+    justify-content: center; /* Centraliza verticalmente os elementos */
+    align-items: center; /* Centraliza horizontalmente os elementos */
+    margin: 100px auto 0; /* Margem superior de 100px para afastar do .titulo */
+  }
+
+ 
+  #horas, #minutos, #segundos  {
+    font-size: 5em; /* Tamanho da fonte dos números */
+   
+  }
+  
+  #horas::after, #minutos::after {
+    content: ":"; /* Adiciona dois pontos após horas e minutos */
+    font-size: 1em; /* Tamanho da fonte dos dois pontos */
+  }
+  .botoes {
+      /* Estilos para a div dos botões */
+      margin-top: 10px; /* Espaçamento entre os números e os botões */
+     
+    }
+    
+    .botoes button {
+      /* Estilos para os botões */
+      margin: 5px;
+      font-size: 18px; /* Tamanho da fonte desejado */
+      padding: 10px 20px; /* Ajuste de padding para aumentar o tamanho dos botões */
+      border-radius: 8px;
+      cursor: pointer; /* Define o cursor como uma mãozinha */
+    }
